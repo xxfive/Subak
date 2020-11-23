@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF00DD"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/blackpink"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTS-Dynamite"
+                        android:textSize="24dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아티스트 : BLACKPINK"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="앨범 종류 : 정규"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="발매일 : 2020.10.02"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="장르 : 댄스/팝, 랩/힙합"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_thumb_up" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="7dp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_thumb_down"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_moview_review_ll"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/main_dir_actor_ll"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한줄평"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/main_review_write_img"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_review_selected"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/main_review_write_tv"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignTop="@+id/main_review_write_tv"
+                    android:layout_alignBottom="@+id/main_review_write_tv"
+                    />
+
+                <TextView
+                    android:id="@+id/main_review_write_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성하기"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#e54a20"
+                    android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/main_review_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:background="#ffffff" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_movie_see_all_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="모두 보기"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_facebook"
+                android:layout_margin="20dp" />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_kakao"
+                android:layout_margin="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앨범구매"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:background="#F44336"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

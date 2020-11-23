@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/green">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원가입"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint=" ID"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:id="@+id/editTextLoginId"
+                android:drawableStart="@drawable/id"
+                android:drawableLeft="@drawable/id"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"/>
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint=" PASSWORD"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:id="@+id/editTextLoginPasswd"
+                android:drawableStart="@drawable/pwd"
+                android:drawableLeft="@drawable/pwd"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"/>
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint=" PASSWORD CONFIRM"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:id="@+id/editTextLoginPasswdConfirm"
+                android:drawableStart="@drawable/pwd"
+                android:drawableLeft="@drawable/pwd"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/buttonDoJoin"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="가입"/>
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonCancel"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="취소"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
